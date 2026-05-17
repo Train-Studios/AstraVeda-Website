@@ -21,7 +21,7 @@ export function SiteHeader() {
         </nav>
         <Link
           href="/support"
-          className="rounded-full border border-gold/25 px-4 py-2 text-xs font-semibold uppercase tracking-[0.08em] text-gold transition hover:border-gold/60 hover:bg-gold/10">
+          className="rounded-full bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.08em] text-ivory transition hover:bg-white/15 hover:text-gold">
           Support
         </Link>
       </div>

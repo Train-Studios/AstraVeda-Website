@@ -40,7 +40,7 @@ const trustItems = [
 export default function HomePage() {
   return (
     <>
-      <section className="relative overflow-hidden px-5 pb-20 pt-32 sm:px-8 sm:pt-36 lg:pb-28">
+      <section className="relative overflow-hidden bg-hero-radial px-5 pb-20 pt-32 sm:px-8 sm:pt-36 lg:pb-28">
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.08fr_.92fr]">
           <MotionReveal>
             <div>
@@ -58,12 +58,14 @@ export default function HomePage() {
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <Link
                   href="#download"
-                  className="rounded-full bg-gradient-to-r from-[#F8DA72] via-gold to-[#A9831F] px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.08em] text-slate-900 shadow-gold transition hover:-translate-y-0.5">
+                  className="inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] text-black shadow-[0_18px_50px_rgba(212,175,55,0.25)] transition hover:-translate-y-0.5 hover:bg-[#d3a11d]">
                   Download on Google Play
                 </Link>
-                <span className="rounded-full border border-ivory/[0.14] bg-white/5 px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.08em] text-ivory/72">
-                  Coming Soon on iOS
-                </span>
+                <Link
+                  href="/support"
+                  className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] text-ivory transition hover:bg-white/10 hover:text-gold">
+                  Support
+                </Link>
               </div>
             </div>
           </MotionReveal>
@@ -103,6 +105,9 @@ export default function HomePage() {
               <h2 className="mt-4 text-balance text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
                 Practical spiritual clarity, presented with restraint.
               </h2>
+              <p className="mt-5 max-w-2xl text-base leading-8 text-ivory/70 sm:text-lg">
+                Designed to make astrology feel calm, clear, and meaningful—without the noise.
+              </p>
             </div>
           </MotionReveal>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -132,8 +137,8 @@ export default function HomePage() {
           <div className="grid gap-4">
             {trustItems.map((item, index) => (
               <MotionReveal key={item} delay={index * 0.05}>
-                <div className="glass-card rounded-3xl p-6">
-                  <p className="text-base leading-8 text-ivory/76">{item}</p>
+                <div className="glass-card rounded-[2rem] border-white/10 bg-white/5 p-6 shadow-[0_24px_80px_rgba(0,0,0,0.18)]">
+                  <p className="text-base leading-8 text-ivory/80">{item}</p>
                 </div>
               </MotionReveal>
             ))}
@@ -144,7 +149,7 @@ export default function HomePage() {
       <section className="px-5 py-20 sm:px-8" id="download">
         <MotionReveal>
           <div className="glass-card mx-auto max-w-7xl overflow-hidden rounded-[2rem] p-8 md:p-12">
-            <div className="grid gap-10 lg:grid-cols-[1fr_.8fr] lg:items-center">
+            <div className="grid gap-10 lg:grid-cols-[1fr_.95fr] lg:items-center">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.1em] text-gold">AstraVeda Plus</p>
                 <h2 className="mt-4 text-balance text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
@@ -154,8 +159,13 @@ export default function HomePage() {
                   Plus is designed for users who want richer Kundli interpretation, deeper compatibility context,
                   advanced daily guidance, and more room for reflective AI conversations.
                 </p>
+                <Link
+                  href="/support"
+                  className="mt-8 inline-flex rounded-full bg-white px-7 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-ink shadow-[0_16px_48px_rgba(0,0,0,0.18)] transition hover:bg-[#f7f1df]">
+                  Learn about Plus
+                </Link>
               </div>
-              <div className="rounded-3xl border border-gold/20 bg-gold/[0.08] p-6">
+              <div className="rounded-[2rem] border border-gold/15 bg-[#111c35] p-8 shadow-[0_28px_90px_rgba(0,0,0,0.25)]">
                 <p className="text-sm uppercase tracking-[0.1em] text-gold">Premium includes</p>
                 <ul className="mt-5 space-y-3 text-sm leading-7 text-ivory/72">
                   <li>Advanced Dasha and chart insights</li>
