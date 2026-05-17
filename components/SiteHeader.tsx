@@ -10,7 +10,7 @@ export function SiteHeader() {
           <span className="grid h-10 w-10 place-items-center rounded-full border border-gold/[0.35] bg-gold/10 shadow-gold">
             <Image src="/logo.png" alt="" width={30} height={30} className="rounded-full" priority />
           </span>
-          <span className="text-sm font-semibold tracking-[0.26em] text-ivory">{siteConfig.name.toUpperCase()}</span>
+          <span className="text-sm font-semibold tracking-[0.12em] text-ivory">{siteConfig.name.toUpperCase()}</span>
         </Link>
         <nav className="hidden items-center gap-7 text-sm text-ivory/68 md:flex">
           {navLinks.map(link => (
@@ -21,7 +21,7 @@ export function SiteHeader() {
         </nav>
         <Link
           href="/support"
-          className="rounded-full border border-gold/25 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold transition hover:border-gold/60 hover:bg-gold/10">
+          className="rounded-full border border-gold/25 px-4 py-2 text-xs font-semibold uppercase tracking-[0.08em] text-gold transition hover:border-gold/60 hover:bg-gold/10">
           Support
         </Link>
       </div>

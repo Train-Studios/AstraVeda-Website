@@ -40,11 +40,11 @@ const trustItems = [
 export default function HomePage() {
   return (
     <>
-      <section className="relative overflow-hidden px-5 pb-20 pt-20 sm:px-8 sm:pt-28 lg:pb-28">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.08fr_.92fr]">
+      <section className="relative overflow-hidden px-5 pb-20 pt-32 sm:px-8 sm:pt-36 lg:pb-28">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.08fr_.92fr]">
           <MotionReveal>
             <div>
-              <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-gold/20 bg-gold/[0.08] px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-gold">
+              <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-gold/20 bg-gold/[0.08] px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-gold">
                 <span className="h-1.5 w-1.5 rounded-full bg-gold shadow-[0_0_18px_rgba(212,175,55,.9)]" />
                 Vedic guidance, reimagined
               </div>
@@ -58,10 +58,10 @@ export default function HomePage() {
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <Link
                   href="#download"
-                  className="rounded-full bg-gradient-to-r from-[#F8DA72] via-gold to-[#A9831F] px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.18em] text-ink shadow-gold transition hover:-translate-y-0.5">
+                  className="rounded-full bg-gradient-to-r from-[#F8DA72] via-gold to-[#A9831F] px-7 py-4 text-center text-sm font-bold uppercase tracking-[0.08em] text-slate-900 shadow-gold transition hover:-translate-y-0.5">
                   Download on Google Play
                 </Link>
-                <span className="rounded-full border border-ivory/[0.14] bg-white/5 px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.18em] text-ivory/72">
+                <span className="rounded-full border border-ivory/[0.14] bg-white/5 px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.08em] text-ivory/72">
                   Coming Soon on iOS
                 </span>
               </div>
@@ -99,13 +99,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl">
           <MotionReveal>
             <div className="max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-gold">Features</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.1em] text-gold">Features</p>
               <h2 className="mt-4 text-balance text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
                 Practical spiritual clarity, presented with restraint.
               </h2>
             </div>
           </MotionReveal>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, index) => (
               <MotionReveal key={feature.title} delay={index * 0.04}>
                 <FeatureCard {...feature} />
@@ -119,7 +119,7 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[.9fr_1.1fr]">
           <MotionReveal>
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-gold">Trust</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.1em] text-gold">Trust</p>
               <h2 className="mt-4 text-balance text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
                 Built for reflection, not fear.
               </h2>
@@ -146,7 +146,7 @@ export default function HomePage() {
           <div className="glass-card mx-auto max-w-7xl overflow-hidden rounded-[2rem] p-8 md:p-12">
             <div className="grid gap-10 lg:grid-cols-[1fr_.8fr] lg:items-center">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-gold">AstraVeda Plus</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.1em] text-gold">AstraVeda Plus</p>
                 <h2 className="mt-4 text-balance text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl">
                   Deeper chart context when you want more detail.
                 </h2>
@@ -156,7 +156,7 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="rounded-3xl border border-gold/20 bg-gold/[0.08] p-6">
-                <p className="text-sm uppercase tracking-[0.24em] text-gold">Premium includes</p>
+                <p className="text-sm uppercase tracking-[0.1em] text-gold">Premium includes</p>
                 <ul className="mt-5 space-y-3 text-sm leading-7 text-ivory/72">
                   <li>Advanced Dasha and chart insights</li>
                   <li>Detailed compatibility interpretation</li>
